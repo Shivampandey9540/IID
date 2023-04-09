@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.w90 {
+  width: 90% !important;
+}
+.gridfrpxfr {
+  grid-template-columns: 1fr 10px 1fr !important;
+}
+.Mytholog {
+  padding: 100px 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .gridfrpxfr {
+    grid-template-columns: 1fr !important;
+  }
+  .Mytholog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Mytholog {
+    grid-template-columns: 1fr;
+  }
+}
